@@ -1,9 +1,11 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Articles</ion-title>
   </ion-toolbar>
 </ion-header>
-
 
 <ion-content>
   <ion-item *ngIf="!articles">
@@ -19,9 +21,9 @@
   </ion-list>
 
   <ion-fab vertical="bottom" horizontal="end">
-    <ion-fab-button color="success" [routerLink]="['/article-create']">
-      <ion-icon name="add-circle-outline"></ion-icon>
-    </ion-fab-button>
-</ion-fab>
+      <ion-fab-button color="success" [routerLink]="['/article-create']">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

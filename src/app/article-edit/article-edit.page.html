@@ -1,8 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>articleEdit</ion-title>
+    <ion-title>Edit Article</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
 
 <ion-content *ngIf="!article">
   <ion-label ion-text-center>
@@ -15,31 +17,31 @@
   <ion-input [(ngModel)]="article._id" name="_id" type="hidden"></ion-input>
 
   <ion-item>
-    <ion-label>Title</ion-label>
+    <ion-label><strong>Title:</strong></ion-label>
     <ion-input [(ngModel)]="article.title" name="title" type="text"></ion-input>
     <div *ngIf="errors.title"> {{ errors.title }} </div>
   </ion-item>
 
   <ion-item>
-    <ion-label>Description</ion-label>
+    <ion-label><strong>Description:</strong></ion-label>
     <ion-input [(ngModel)]="article.description" name="description" type="text"></ion-input>
     <div *ngIf="errors.description"> {{ errors.description }} </div>
   </ion-item>
 
   <ion-item>
-    <ion-label>Keywords</ion-label>
+    <ion-label><strong>Keywords:</strong></ion-label>
     <ion-input [(ngModel)]="article.keywords" name="keywords" type="text"></ion-input>
     <div *ngIf="errors.keywords"> {{ errors.keywords }} </div>
   </ion-item>
 
   <ion-item>
-    <ion-label>Body</ion-label>
+    <ion-label><strong>Body:</strong></ion-label>
     <ion-input [(ngModel)]="article.body" name="body" type="text"></ion-input>
     <div *ngIf="errors.body"> {{ errors.body }} </div>
   </ion-item>
 
   <ion-item>
-    <ion-label>Modified</ion-label>
+    <ion-label><strong>Modified:</strong></ion-label>
     <ion-input [(ngModel)]="article.modified" name="modified" type="date"></ion-input>
     <div *ngIf="errors.modified"> {{ errors.modified }} </div>
   </ion-item>

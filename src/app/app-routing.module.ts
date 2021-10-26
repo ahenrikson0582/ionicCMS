@@ -48,8 +48,8 @@ const routes: Routes = [
     loadChildren: () => import('./article-edit/article-edit.module').then( m => m.ArticleEditPageModule)
   },
   {
-    path: 'article',
-    loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
+    path: 'articles',
+    loadChildren: () => import('./articles/articles.module').then( m => m.ArticlesPageModule)
   }
 ];
 
